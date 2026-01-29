@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+<form>
+<fieldset>
+    <legend>New User Registration</legend>
+
+    <label>Name:</label>
+    <input type="text" required autofocus placeholder="Enter name"><br><br>
+
+    <label>Email:</label>
+    <input type="email" required placeholder="example@mail.com"><br><br>
+
+    <label>Password:</label>
+    <input type="password" required pattern=".{6,}"><br><br>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender"> Male
+    <input type="radio" name="gender"> Female<br><br>
+
+    <label>Interests:</label>
+    <input type="checkbox"> Fiction
+    <input type="checkbox"> Technology<br><br>
+
+    <label>Date of Birth:</label>
+    <input type="date"><br><br>
+
+    <label>Upload ID:</label>
+    <input type="file"><br><br>
+
+    <input type="submit" value="Register">
+
+</fieldset>
+</form>
+
+</body>
+</html>

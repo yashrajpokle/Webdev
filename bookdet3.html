@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <style>
+        /* Book Card Layout */
+        .book-card {
+            width: 200px;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: inline-block;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .book-card:hover {
+            transform: scale(1.05);
+        }
+        .book-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <h2>Editor's Choice</h2>
+    <p>Click On Book to Open</p>
+    <div class="book-gallery">
+        <div class="book-card">
+            <figure>
+                <a href="book.html">
+                    <img src="https://nextnewbooks.com/wp-content/uploads/2024/02/200638897.jpg" alt="Book 1" title="Fortune Teller" width="150" height="200">
+                </a>
+                <figcaption>Fortune Teller</figcaption>
+                <a href="price.html"><b>See Price</b></a>
+            </figure>
+        </div>
+
+        <div class="book-card">
+            <figure>
+                <a href="book.html">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.ZhDSsmReUpSanC_Cu78E-gHaLG?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Book 2" title="Most Anticipated" width="150" height="200">
+                </a>
+                <figcaption>Most Anticipated</figcaption>
+                <a href="price.html"><b>See Price</b></a>
+            </figure>
+        </div>
+
+        <div class="book-card">
+            <figure>
+                <a href="book.html">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.0jVl1fP8lOSs7lkL6xFBLQHaLH?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Book 3" title="Book Release" width="150" height="200">
+                </a>
+                <figcaption>Book Release</figcaption>
+                <a href="price.html"><b>See Price</b></a>
+            </figure>
+        </div>
+
+        <div class="book-card">
+            <figure>
+                <a href="book.html">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.M84-gNzMZI1eGM66USmyhgHaLG?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Book 4" title="New Book" width="150" height="200">
+                </a>
+                <figcaption>New Book</figcaption>
+                <a href="price.html"><b>See Price</b></a>
+            </figure>
+        </div>
+    </div>
+</section>
+
+
+
+</body>
+</html>

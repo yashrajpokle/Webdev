@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Book Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="layout.css">
+    <style>
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #e74c3c;
+            text-decoration: underline;
+        }
+        /* Style sidebar */
+        aside {
+            border: 2px solid #bdc3c7;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #ecf0f1;
+        }
+        aside li {
+            margin: 10px 0;
+        }
+        aside li:hover {
+            color: #3498db;
+            transition: color 0.3s ease;
+        }
+        .offer {
+            background-color: #e74c3c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            animation: blink 1s infinite;
+            box-shadow: 0 0 20px oklab(63.066% 0.16897 0.09531 / 0.5);
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+<center>
+<header>
+    <h1 style="background-color:Tomato;">Online Book Store</h1>
+    <p>With Cheapest Price</p>
+</header>
+<hr>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bookdet.html">Categories</a></li>
+        <li><a href="registration-form.html">Login</a></li>
+        <li><a href="price.html">Cart</a></li>
+        <li><a href="registration-form.html">Contact</a></li>
+    </ul>
+</nav>
+</center>
+
+<div class="search-bar">
+    <input type="text" placeholder="Search for books...">
+    <button type="submit">Search</button>
+</div>
+
+<hr>
+
+<section>
+    <article>
+        <h1 style="background-color:rgb(252, 95, 47);">Welcome</h1>
+        <p>Discover books from various categories and genres.</p>
+        <a href="media.html"><b> See Media </b></a>
+    </article>
+    <hr>
+    <div class="offer">
+     Special Offer: 20% Off on All eBooks!
+    </div>
+    <hr>
+
+    <aside>
+        <h4>Top Categories</h4>
+<ol>
+    <li><a href="bookdet.html"><b>Best Sellers</b></a> </li>
+    <li><a href="bookdet2.html">New Arrivals</a> </li>
+    <li><a href="bookdet3.html"><i>Editor's Choice</i></a> </li>
+</ol>
+
+<h4>Genres</h4>
+<ul>
+    <li>Fiction</li>
+    <li>Non-Fiction</li>
+    <li>Science</li>
+    <li>Technology</li>
+</ul>
+
+<h4>Formats</h4>
+<dl>
+    <dt><b>Paperback</b></dt>
+    <dd>Lightweight and affordable</dd>
+    <dt><b>Hardcover</b></dt>
+    <dd>Durable and premium</dd>
+    <dt><b>eBook</b></dt>
+    <dd>Instant digital access</dd>
+</dl>
+
+    </aside>
+</section>
+<hr>
+<img src="https://media.istockphoto.com/id/1402586380/vector/click-here-icon-in-flat-style-pointer-clicking-vector-illustration-on-isolated-background.jpg?s=612x612&w=0&k=20&c=z2mwqW1HFPtdyQmCexmnAojig74NFdyPL9Lhd2yyTdA=" alt="Store Banner" usemap="#storemap" width="600" height="200">
+
+<map name="storemap">
+    <area shape="rect" coords="0,0,200,200" href="bookdet.html" alt="New Arrivals">
+    <area shape="rect" coords="200,0,400,200" href="bookdet2.html" alt="Best Sellers">
+    <area shape="rect" coords="400,0,600,200" href="bookdet3.html" alt="Offers">
+</map>
+
+<section class="featured-books">
+    <h2>Featured Books</h2>
+    <div class="book-gallery">
+        <div class="book-card">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.0jVl1fP8lOSs7lkL6xFBLQHaLH?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Book 1">
+            <h3> Rich Dad Poor Dad </h3>
+            <p>$19.99</p>
+            <a href="book.html">View Details</a>
+        </div>
+        <div class="book-card">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.M84-gNzMZI1eGM66USmyhgHaLG?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Book 2">
+            <h3> How To Be Rich </h3>
+            <p>$24.99</p>
+            <a href="book.html">View Details</a>
+        </div>
+        <div class="book-card">
+            <img src="https://nextnewbooks.com/wp-content/uploads/2024/02/200638897.jpg" alt="Book 3">
+            <h3> Your Future </h3>
+            <p>$14.99</p>
+            <a href="book.html">View Details</a>
+        </div>
+    </div>
+</section>
+<hr>
+<a href="registration-form.html"><b>Registration Form </b></a>
+<hr>
+<center>
+<footer>
+    <p>&copy; All Rights Reserved To Yashraj Pokle.</p>
+</footer>
+</center>
+</body>
+</html>
