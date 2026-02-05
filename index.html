@@ -87,6 +87,22 @@
 <section>
     <article>
         <h1 style="background-color:rgb(252, 95, 47);">Welcome</h1>
+        
+        
+        <script>
+        function fn(){
+            document.getElementById("demo").innerHTML = "999";
+        }
+        </script>
+        <p id ="demo">see price</p>
+        <button type="button" onclick="fn()">try it</button>
+
+        <div id="welcome-message"></div>
+        <div id="book-details"></div>
+        <div id="total-price"></div>
+        <div id="final-price"></div>
+        <div id="category-section"></div>
+        <ul id="book-list"></ul>
         <p>Discover books from various categories and genres.</p>
         <a href="media.html"><b> See Media </b></a>
     </article>
@@ -164,5 +180,62 @@
     <p>&copy; All Rights Reserved To Yashraj Pokle.</p>
 </footer>
 </center>
+
+<script>
+document.getElementById('welcome-message').innerText = "Welcome to Online Book Shop";
+
+// Task 2
+let title = "Rich Dad Poor Dad"; 
+let price = 19.99; 
+let inStock = true; 
+
+
+
+document.getElementById('book-details').innerHTML = `Title: ${title}<br>Price: $${price}<br>In Stock: ${inStock}`;
+
+// Task 3: 
+let bookPrice = 450;
+let quantity = 3;
+let total = bookPrice * quantity;
+
+document.getElementById('total-price').innerHTML = `Total Price = ₹${total}`;
+
+// Task 4
+let finalPrice;
+if (total > 1000) {
+    finalPrice = total * 0.9; 
+} else {
+    finalPrice = total; 
+}
+
+document.getElementById('final-price').innerHTML = `Final Price = ₹${finalPrice}`;
+
+// Task 5
+let category = "programming";
+let message;
+switch (category) {
+    case "programming":
+        message = "Programming Books";
+        break;
+    case "novel":
+        message = "Novel Section";
+        break;
+    case "kids":
+        message = "Kids Section";
+        break;
+    default:
+        message = "Unknown Category";
+}
+document.getElementById('category-section').innerHTML = message;
+
+// Task 6
+let books = ["HTML", "CSS", "JavaScript", "Python"];
+let bookList = document.getElementById('book-list');
+for (let book of books) {
+    let li = document.createElement('li');
+    li.textContent = book;
+    bookList.appendChild(li);
+}
+</script>
 </body>
 </html>
